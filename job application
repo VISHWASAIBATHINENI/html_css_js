@@ -1,0 +1,125 @@
+<-----HTML----->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job application</title>
+    <link rel="stylesheet" href="job app.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="apply_box">
+            <h1>JOB APPLICATION</h1>
+                <form action="apply_form">
+                    <div class="form_container">
+                        <div class="form_controls">
+                            <label for="First Name">First Name:</label>
+                            <input type="text" id="First Name" name="First Name" placeholder="Enter your First Name">
+                        </div>                    
+                        <div class="form_controls">
+                            <label for="Middel Name">Middel Name:</label>
+                            <input type="text" id="Middel Name" name="Middel Name" placeholder="Enter your Middel Name">
+                        </div>
+                        <div class="form_controls">
+                            <label for="Last Name">Last Name:</label>
+                            <input type="text" id="Last Name" name="Last Name" placeholder="Enter your Last Name">
+                        </div>
+                        <div class="form_controls">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your Email">
+                        </div>
+                        <div class="form_controls">
+                            <label for="Age">Age:</label>
+                            <input type="date">
+                        </div>
+                        <div class="form_controls">
+                            <label for="job role">job role:</label>
+                            <select name="Job role" id="Job role">
+                                <option value="">select job role</option>
+                                <option value="Full stack">Full stack</option>
+                                <option value="Front end">Front end</option>
+                                <option value="Back end">Back end</option>
+                                <option value="C language">c language</option>
+                            </select>
+                        </div>
+                        <div class="form_controls">
+                            <label for="Address">Address:</label>
+                            <textarea name="Address" id="Address" rows="5" cols="70"></textarea>
+                        </div>
+                        <div class="form_controls">
+                            <label for="city">City:</label>
+                            <input type="text" name="city" id="city" placeholder="Enter your city">
+                        </div>
+                        <div class="form_controls">
+                            <label for="Pin code">Pin code:</label>
+                            <input type="number"  id="Pin code" name="Pin code">
+                        </div>
+                        <div class="form_controls">
+                            <label for="Start date">Start data:</label>
+                            <input type="date">
+                        </div>
+                        <div class="form_controls">
+                            <label for="Uplode your cv">Uplode your cv:</label>
+                            <input type="file" id="Uplode your cv" name="Uplode your cv" >
+                        </div>
+                    </div>
+                </form>
+                <div class="button">
+                    <button>Apply Now</button>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<-----CSS----->
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.apply_box{
+    max-width: 670px;
+    padding: 20px;
+    background-color:gray;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 2px 3px 5px rgb(108, 22, 206);
+}
+.form_container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 20px;
+}
+.form_controls{
+    display: flex;
+    flex-direction: column;
+}
+.apply_box label{
+    font-size: 20px;
+}
+.apply_box input,select,textarea{
+    padding: 6px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+input:focus{
+    outline-color: red;
+}
+button{
+    margin-top: 15px;
+    border-color: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: brown;
+}
