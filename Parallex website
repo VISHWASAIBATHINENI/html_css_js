@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallex website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section class="img1">
+        <div class="ptext">
+            <span class="bgtext">Parallex website</span>
+        </div>
+    </section>
+    <section class="section section_light">
+        <h2>Section One</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae eaque nulla tempore
+            doloribus odio cupiditate, corporis nihil aperiam. Repellat ipsum illo, rerum iste amet nesciunt quisquam
+            soluta! Dolores obcaecati rem quo consequuntur, provident consectetur incidunt veniam earum distinctio,
+            temporibus veritatis officiis nobis, vitae soluta corporis aliquid eligendi! Adipisci provident nisi
+            perferendis ad, fugiat voluptate nostrum rerum eveniet quisquam iure quia quas exercitationem natus quo
+            illum laudantium officia dolorem asperiores fuga. Dolorum iure explicabo sed cum temporibus aperiam odio
+            quasi excepturi expedita tempore. Dolor qui est placeat consequuntur molestiae non atque saepe voluptates
+            hic facere nulla quod quae, at deleniti.
+        </p>
+    </section>
+    <section class="img2">
+        <div class="ptext">
+            <span class="bgtext">Explore Nature</span>
+        </div>
+    </section>
+    <section class="section section_Dark">
+        <h2>Section Two</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla soluta nesciunt perferendis maxime,
+            minus, itaque iusto sapiente ratione harum exercitationem ut ipsum porro vel asperiores voluptates dolore,
+            rem veniam dolor quae obcaecati! Rem molestias mollitia voluptatem ducimus hic quos id soluta ipsam fugit?
+            Praesentium asperiores expedita labore accusantium, laborum necessitatibus ex quo pariatur aliquam itaque
+            sint rerum libero autem voluptatem ut, atque sed quisquam perspiciatis. Quo consectetur temporibus
+            consequuntur. Est neque similique tempora eos magni perspiciatis aliquid impedit omnis pariatur. Minima
+            facilis totam ducimus dignissimos sed enim ipsum, sapiente architecto consequuntur perferendis dolorem ea
+            quibusdam dolor fuga doloribus quia aut voluptatum, atque, quo iure nemo illum labore! Fugiat dolorum
+            praesentium accusantium sit fuga totam ipsam, sunt labore minus error aut! Voluptate minus ad aut quos
+            deserunt! Unde autem ex, quod iusto tenetur recusandae cupiditate nobis cumque similique maiores! Maiores,
+            ea. Ipsam vel adipisci quisquam tempora, rerum assumenda ad exercitationem labore quidem maxime facilis amet
+            tempore illo. Consequatur obcaecati, quae fuga sunt maxime provident, neque nesciunt illum molestiae modi,
+            ipsa consequuntur maiores expedita asperiores! Praesentium est perspiciatis nulla, ipsa temporibus eum culpa
+            sequi enim unde ducimus repellat accusantium doloribus inventore ea quis consectetur natus pariatur magnam
+            dignissimos? Exercitationem, enim iusto.
+        </p>
+    </section>
+    <section class="img3">
+        <div class="ptext">
+            <span class="bgtext">Look deep Into The Nature</span>
+        </div>
+    </section>
+    <section class="section section_Nature">
+        <h2>Section Three</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam blanditiis eligendi velit iste perspiciatis
+            expedita provident placeat, repellat ratione beatae ullam, impedit doloremque esse. Sint molestiae
+            aspernatur est id saepe commodi obcaecati pariatur, quod numquam iure, porro odio enim! Ad vitae dicta
+            commodi ut! Praesentium facilis quasi deleniti ipsum quis. Assumenda voluptatem tenetur quidem consequuntur
+            molestiae laborum accusantium nemo quaerat id corporis cupiditate aspernatur, ea, architecto sit dolorem! A
+            perspiciatis voluptatibus voluptatem. Illum similique explicabo eum quasi doloribus sapiente consectetur
+            quaerat voluptates aperiam, vitae, eligendi voluptatum officia voluptatibus sit reiciendis placeat
+            distinctio dicta iure ea? Deleniti inventore ex minus ratione magnam adipisci eveniet repellat, perspiciatis
+            labore porro nemo distinctio exercitationem beatae cumque voluptatum iste alias assumenda ut vero sit
+            sapiente? Nobis optio cupiditate sit suscipit provident eligendi nihil reiciendis quas saepe necessitatibus.
+            Provident, dolores.
+        </p>
+    </section>
+</body>
+</html>
+
+<-----css code----->
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    font-size: 20px;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+.img1{
+    background-image: url(image/image1.png);
+    min-height: 100%;
+}
+.ptext{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.bgtext{
+    background: #313131;
+    color: #fff;
+    padding: 10px;
+}
+.img2{
+    background-image: url(image/image2.png);
+    min-height: 100%;
+}
+.img3{
+    background-image: url(image/image3.png);
+    min-height: 100%;
+}
+.img1,.img2,.img3{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+section{
+    padding: 50px 80px;
+    text-align: center;
+    background:white;
+    color: gray;
+}
+.section_Dark{
+    padding: 50px 80px;
+    text-align: center;
+    background:rgb(23, 22, 22);
+    color: white;
+}
+.section_Nature{
+    padding: 50px 80px;
+    text-align: center;
+    background:cornflowerblue;
+    color:black;
+}
