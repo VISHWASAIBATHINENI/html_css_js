@@ -18,15 +18,9 @@
         <nav class="container">
             <div class="logo">Portfolio</div>
             <ul>
-                <a href="#Home">
-                    <li>Home</li>
-                </a>
-                <a href="#project">
-                    <li>projects</li>
-                </a>
-                <a href="#contact">
-                    <li>contact</li>
-                </a>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -96,15 +90,16 @@
                 <div class="Top_contact">
                     <div class="contact_way">
                         <i class="fab fa-linkedin"></i>
-                        <h3><a href="https://www.linkedin.com/feed/"class="contact_way">LINKEDIN</a></h3>
+                        <h3><a href="https://www.linkedin.com/feed/" class="contact_way">LINKEDIN</a></h3>
                     </div>
                     <div class="contact_way">
                         <i class="fab fa-github"></i>
                         <h3><a href="https://github.com/">GITHUB</a></h3>
                     </div>
                     <div class="contact_way">
-                        <i class="fas fa-envelope"></i><h3>
-                        <h3><a href="mailto:vishwa.bathineni@gmail.com"class="contact_way">Send Mail</a></h3>
+                        <i class="fas fa-envelope"></i>
+                        <h3>
+                            <h3><a href="mailto:vishwa.bathineni@gmail.com" class="contact_way">Send Mail</a></h3>
                     </div>
                     <div class="contact_way">
                         <i class="fas fa-phone"></i>
@@ -162,6 +157,10 @@ body {
 
 header {
     background: var(--lighting-color);
+    position: fixed;
+    width: 100%;       
+    top: 0;           
+    z-index: 999;
 }
 
 nav {
@@ -304,7 +303,6 @@ nav li:hover {
 .card:hover {
     transform: scale(1.05);
     transition: 1s ease-in-out;
-    /* border-radius: 10px; */
 }
 
 .card:hover img {
@@ -321,7 +319,11 @@ nav li:hover {
     padding: 2rem;
     position: relative;
 }
+
+
 /* CONTACT SECTION */
+
+
 #contact{
     background: var(--Dark-color);
 }
@@ -338,26 +340,32 @@ nav li:hover {
     gap: 4rem;
     justify-content: center;
 }
+
 .Top_contact{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     margin: 0 auto;
     max-width: 800px;
 }
+
 .contact_way{
     display: flex;
     gap: 1rem;
     align-items: center;
 }
+
 .contact_way i {
     font-size: 30px;
 }
+
 .contact_way h3{
     font-size: 3rem;
     font-weight: bold;
 }
 
+
 /* footer */
+
 
 footer{
     background: var(--Darker-color);
@@ -366,7 +374,6 @@ footer{
     font-size: 1.6rem;
     text-align: center;
 }
-
 
 @media(max-width:786px){
     html{
